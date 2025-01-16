@@ -10,7 +10,7 @@ env:
   APPLY_FIXES: all
   APPLY_FIXES_EVENT: pull_request
   APPLY_FIXES_MODE: commit
-  REPOSITORY_TRUFFLEHOG_ARGUMENTS: "--exclude-paths=.git"
+  REPOSITORY_TRUFFLEHOG_ARGUMENTS: "--exclude-paths=./.git"
 
 concurrency:
   group: ${{ github.ref }}-${{ github.workflow }}
