@@ -1,7 +1,7 @@
 ---
 name: MegaLinter
 on:
-  push:
+  push: null
   pull_request:
     branches:
       - main
@@ -10,6 +10,7 @@ env:
   APPLY_FIXES: all
   APPLY_FIXES_EVENT: pull_request
   APPLY_FIXES_MODE: commit
+  FILTER_REGEX_EXCLUDE: '.*\.git/config'  # Exclude .git/config from trufflehog et al scans
 concurrency:
   group: ${{ github.ref }}-${{ github.workflow }}
   cancel-in-progress: true
@@ -38,9 +39,6 @@ jobs:
               contains(fromJSON('["refs/heads/main"]'), github.ref)
             }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          REPOSITORY_TRUFFLEHOG_UNSECURED_ENV_VARIABLES: |
-            "PAT"
-            "SECRETS.PAT"
       - name: Archive production artifacts
         if: success() || failure()
         uses: actions/upload-artifact@65c4c4a1ddee5b72f698fdd19549f0f0fb45cf08 #v4.6.0
