@@ -38,6 +38,9 @@ jobs:
               contains(fromJSON('["refs/heads/main"]'), github.ref)
             }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPOSITORY_TRUFFLEHOG_UNSECURED_ENV_VARIABLES: |
+            "PAT"
+            "SECRETS.PAT"
       - name: Archive production artifacts
         if: success() || failure()
         uses: actions/upload-artifact@65c4c4a1ddee5b72f698fdd19549f0f0fb45cf08 #v4.6.0
