@@ -35,7 +35,7 @@ jobs:
           VALIDATE_ALL_CODEBASE: >-
             ${{
               github.event_name == 'push' &&
-              contains(fromJSON('["refs/heads/main", "refs/heads/master"]'), github.ref)
+              contains(fromJSON('["refs/heads/main"]'), github.ref)
             }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ENABLE: |
@@ -71,7 +71,7 @@ jobs:
           printf 'APPLY_FIXES_IF_COMMIT=%s\n' "${{
             env.APPLY_FIXES_IF == 'true' &&
             env.APPLY_FIXES_MODE == 'commit' &&
-            (!contains(fromJSON('["refs/heads/main", "refs/heads/master"]'), github.ref))
+            (!contains(fromJSON('["refs/heads/main"]'), github.ref))
           }}" >> "${GITHUB_ENV}"
       - name: Create Pull Request with applied fixes
         uses: peter-evans/create-pull-request@67ccf781d68cd99b580ae25a5c18a1cc84ffff1f #v7.0.6
