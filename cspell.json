@@ -3,9 +3,14 @@
     "language": "en",
     "words": [
         "stefanzweifel",
-        "CODEOWNERS"
+        "CODEOWNERS",
+        "MARKDOWNLINT"
     ],
     "flagWords": [
         "master"
+    ],
+    "ignorePaths": [
+        ".gitignore",
+        "cspell.json"
     ]
 }
