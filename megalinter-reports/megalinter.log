@@ -12,7 +12,7 @@ The MegaLinter documentation can be found at:
 MegaLinter will analyze workspace [/github/workspace]
 GITHUB_REPOSITORY: ShaneMcGovern/shanemcgovern.github.io
 GITHUB_REF: refs/pull/1/merge
-GITHUB_RUN_ID: 12821148216
+GITHUB_RUN_ID: 12821183024
 
 
 [Activation] ANSIBLE_ANSIBLE_LINT has been set inactive, as none of these files has been found: ['.ansible-lint']
@@ -162,89 +162,89 @@ Processing linters on [4] parallel cores… (can be decreased with variable PARA
 - Number of files analyzed: [12]
 - Command: [jsonlint --quiet cspell.json megalinter-reports/IDE-config/.devskim.json megalinter-reports/IDE-config/.jscpd.json megalinter-reports/IDE-config/.markdown-link-check.json megalinter-reports/IDE-config/.markdownlint.json megalinter-reports/IDE-config/...(truncated)]
 ::endgroup::
-::group::[32m✅ Linted [MARKDOWN] files with [markdownlint] successfully - (0.3s)[0m (expand for details)
+::group::[32m✅ Linted [MARKDOWN] files with [markdownlint] successfully - (0.32s)[0m (expand for details)
 - Using [markdownlint v0.43.0] https://megalinter.io/8.3.0/descriptors/markdown_markdownlint
 - MegaLinter key: [MARKDOWN_MARKDOWNLINT]
 - Rules config: [.markdownlint.json]
 - Number of files analyzed: [2]
 - Command: [markdownlint --fix -c /action/lib/.automation/.markdownlint.json README.md index.md]
 ::endgroup::
-::group::[32m✅ Linted [COPYPASTE] files with [jscpd] successfully - (1.26s)[0m (expand for details)
+::group::[32m✅ Linted [COPYPASTE] files with [jscpd] successfully - (1.2s)[0m (expand for details)
 - Using [jscpd v4.0.5] https://megalinter.io/8.3.0/descriptors/copypaste_jscpd
 - MegaLinter key: [COPYPASTE_JSCPD]
 - Rules config: [.jscpd.json]
 - Command: [jscpd --gitignore --reporters console,html --exitCode 1 --output /github/workspace/megalinter-reports/copy-paste/ -c /action/lib/.automation/.jscpd.json .]
 ::endgroup::
-::group::[32m✅ Linted [YAML] files with [prettier] successfully - (0.62s)[0m (expand for details)
+::group::[32m✅ Linted [YAML] files with [prettier] successfully - (0.5s)[0m (expand for details)
 - Using [prettier v3.3.3] https://megalinter.io/8.3.0/descriptors/yaml_prettier
 - MegaLinter key: [YAML_PRETTIER]
 - Rules config: identified by [prettier]
 - Number of files analyzed: [10]
 - Command: [prettier --write .github/workflows/jekyll-gh-pages.yml .github/workflows/mega-linter.yml _config.yml megalinter-reports/IDE-config/.checkov.yml megalinter-reports/IDE-config/.grype.yaml megalinter-reports/IDE-config/.yamllint.yml megalinter-reports/u...(truncated)]
 ::endgroup::
-::group::[32m✅ Linted [MARKDOWN] files with [markdown-link-check] successfully - (2.11s)[0m (expand for details)
-- Using [markdown-link-check v3.12.2] https://megalinter.io/8.3.0/descriptors/markdown_markdown_link_check
-- MegaLinter key: [MARKDOWN_MARKDOWN_LINK_CHECK]
-- Rules config: [.markdown-link-check.json]
-- Number of files analyzed: [2]
-- Command: [markdown-link-check --quiet -c /action/lib/.automation/.markdown-link-check.json README.md index.md]
-::endgroup::
-::group::[32m✅ Linted [YAML] files with [yamllint] successfully - (0.33s)[0m (expand for details)
+::group::[32m✅ Linted [YAML] files with [yamllint] successfully - (0.37s)[0m (expand for details)
 - Using [yamllint v1.35.1] https://megalinter.io/8.3.0/descriptors/yaml_yamllint
 - MegaLinter key: [YAML_YAMLLINT]
 - Rules config: [.yamllint.yml]
 - Number of files analyzed: [10]
 - Command: [yamllint --format standard -c /action/lib/.automation/.yamllint.yml .github/workflows/jekyll-gh-pages.yml .github/workflows/mega-linter.yml _config.yml megalinter-reports/IDE-config/.checkov.yml megalinter-reports/IDE-config/.grype.yaml megalinter-re...(truncated)]
 ::endgroup::
-::group::[32m✅ Linted [MARKDOWN] files with [markdown-table-formatter] successfully - (0.27s)[0m (expand for details)
+::group::[32m✅ Linted [MARKDOWN] files with [markdown-link-check] successfully - (1.96s)[0m (expand for details)
+- Using [markdown-link-check v3.12.2] https://megalinter.io/8.3.0/descriptors/markdown_markdown_link_check
+- MegaLinter key: [MARKDOWN_MARKDOWN_LINK_CHECK]
+- Rules config: [.markdown-link-check.json]
+- Number of files analyzed: [2]
+- Command: [markdown-link-check --quiet -c /action/lib/.automation/.markdown-link-check.json README.md index.md]
+::endgroup::
+::group::[32m✅ Linted [MARKDOWN] files with [markdown-table-formatter] successfully - (0.28s)[0m (expand for details)
 - Using [markdown-table-formatter v1.6.1] https://megalinter.io/8.3.0/descriptors/markdown_markdown_table_formatter
 - MegaLinter key: [MARKDOWN_MARKDOWN_TABLE_FORMATTER]
 - Rules config: identified by [markdown-table-formatter]
 - Number of files analyzed: [2]
 - Command: [markdown-table-formatter README.md index.md]
 ::endgroup::
-::group::[32m✅ Linted [SPELL] files with [cspell] successfully - (2.48s)[0m (expand for details)
+::group::[32m✅ Linted [SPELL] files with [cspell] successfully - (2.35s)[0m (expand for details)
 - Using [cspell v8.16.0] https://megalinter.io/8.3.0/descriptors/spell_cspell
 - MegaLinter key: [SPELL_CSPELL]
 - Rules config: identified by [cspell]
 - Number of files analyzed: [30]
 - Command: [cspell --show-context --show-suggestions --no-must-find-files .github/CODEOWNERS .github/workflows/jekyll-gh-pages.yml .github/workflows/linters/trufflehog/exclude-paths.txt .github/workflows/mega-linter.yml .gitignore README.md _config.yml cspell.js...(truncated)]
 ::endgroup::
-::group::[32m✅ Linted [SPELL] files with [lychee] successfully - (0.76s)[0m (expand for details)
+::group::[32m✅ Linted [SPELL] files with [lychee] successfully - (1.18s)[0m (expand for details)
 - Using [lychee v0.17.0] https://megalinter.io/8.3.0/descriptors/spell_lychee
 - MegaLinter key: [SPELL_LYCHEE]
 - Rules config: identified by [lychee]
 - Number of files analyzed: [26]
 - Command: [lychee --format detailed --no-progress --exclude marketplace\.visualstudio\.com|search\.maven\.org .github/workflows/jekyll-gh-pages.yml .github/workflows/linters/trufflehog/exclude-paths.txt .github/workflows/mega-linter.yml README.md _config.yml cs...(truncated)]
 ::endgroup::
-::group::[32m✅ Linted [JSON] files with [v8r] successfully - (6.56s)[0m (expand for details)
+::group::[32m✅ Linted [JSON] files with [v8r] successfully - (6.62s)[0m (expand for details)
 - Using [v8r v4.2.0] https://megalinter.io/8.3.0/descriptors/json_v8r
 - MegaLinter key: [JSON_V8R]
 - Rules config: identified by [v8r]
 - Number of files analyzed: [12]
 - Command: [v8r --ignore-errors cspell.json megalinter-reports/IDE-config/.devskim.json megalinter-reports/IDE-config/.jscpd.json megalinter-reports/IDE-config/.markdown-link-check.json megalinter-reports/IDE-config/.markdownlint.json megalinter-reports/IDE-conf...(truncated)]
 ::endgroup::
-::group::[32m✅ Linted [JSON] files with [prettier] successfully - (0.48s)[0m (expand for details)
+::group::[32m✅ Linted [JSON] files with [prettier] successfully - (0.38s)[0m (expand for details)
 - Using [prettier v3.3.3] https://megalinter.io/8.3.0/descriptors/json_prettier
 - MegaLinter key: [JSON_PRETTIER]
 - Rules config: identified by [prettier]
 - Number of files analyzed: [12]
 - Command: [prettier --write cspell.json megalinter-reports/IDE-config/.devskim.json megalinter-reports/IDE-config/.jscpd.json megalinter-reports/IDE-config/.markdown-link-check.json megalinter-reports/IDE-config/.markdownlint.json megalinter-reports/IDE-config/...(truncated)]
 ::endgroup::
-::group::[32m✅ Linted [YAML] files with [v8r] successfully - (6.49s)[0m (expand for details)
+::group::[32m✅ Linted [YAML] files with [v8r] successfully - (6.76s)[0m (expand for details)
 - Using [v8r v4.2.0] https://megalinter.io/8.3.0/descriptors/yaml_v8r
 - MegaLinter key: [YAML_V8R]
 - Rules config: identified by [v8r]
 - Number of files analyzed: [10]
 - Command: [v8r --ignore-errors .github/workflows/jekyll-gh-pages.yml .github/workflows/mega-linter.yml _config.yml megalinter-reports/IDE-config/.checkov.yml megalinter-reports/IDE-config/.grype.yaml megalinter-reports/IDE-config/.yamllint.yml megalinter-report...(truncated)]
 ::endgroup::
-::group::[32m✅ Linted [REPOSITORY] files with [checkov] successfully - (10.86s)[0m (expand for details)
+::group::[32m✅ Linted [REPOSITORY] files with [checkov] successfully - (11.0s)[0m (expand for details)
 - Using [checkov v3.2.311] https://megalinter.io/8.3.0/descriptors/repository_checkov
 - MegaLinter key: [REPOSITORY_CHECKOV]
 - Rules config: [.checkov.yml]
 - Command: [checkov --directory . --config-file /action/lib/.automation/.checkov.yml]
 ::endgroup::
-::group::[32m✅ Linted [REPOSITORY] files with [devskim] successfully - (0.79s)[0m (expand for details)
+::group::[32m✅ Linted [REPOSITORY] files with [devskim] successfully - (0.78s)[0m (expand for details)
 - Using [devskim v1.0.44] https://megalinter.io/8.3.0/descriptors/repository_devskim
 - MegaLinter key: [REPOSITORY_DEVSKIM]
 - Rules config: [.devskim.json]
@@ -262,49 +262,49 @@ Processing linters on [4] parallel cores… (can be decreased with variable PARA
 - Rules config: identified by [git_diff]
 - Command: [git diff --check --ignore-space-at-eol]
 ::endgroup::
-::group::[32m✅ Linted [REPOSITORY] files with [gitleaks] successfully - (0.04s)[0m (expand for details)
+::group::[32m✅ Linted [REPOSITORY] files with [gitleaks] successfully - (0.05s)[0m (expand for details)
 - Using [gitleaks v8.21.2] https://megalinter.io/8.3.0/descriptors/repository_gitleaks
 - MegaLinter key: [REPOSITORY_GITLEAKS]
 - Rules config: [.gitleaks.toml]
 - Command: [gitleaks detect --redact -c /action/lib/.automation/.gitleaks.toml --verbose --source .]
 ::endgroup::
-::group::[32m✅ Linted [REPOSITORY] files with [grype] successfully - (8.64s)[0m (expand for details)
+::group::[32m✅ Linted [REPOSITORY] files with [grype] successfully - (9.94s)[0m (expand for details)
 - Using [grype v0.79.5] https://megalinter.io/8.3.0/descriptors/repository_grype
 - MegaLinter key: [REPOSITORY_GRYPE]
 - Rules config: [.grype.yaml]
 - Command: [grype --config /action/lib/.automation/.grype.yaml dir:.]
 ::endgroup::
-::group::[32m✅ Linted [REPOSITORY] files with [kics] successfully - (1.47s)[0m (expand for details)
+::group::[32m✅ Linted [REPOSITORY] files with [kics] successfully - (1.82s)[0m (expand for details)
 - Using [kics v2.1.3] https://megalinter.io/8.3.0/descriptors/repository_kics
 - MegaLinter key: [REPOSITORY_KICS]
 - Rules config: identified by [kics]
 - Command: [kics scan --no-progress --path .]
 ::endgroup::
-::group::[32m✅ Linted [REPOSITORY] files with [secretlint] successfully - (0.5s)[0m (expand for details)
+::group::[32m✅ Linted [REPOSITORY] files with [secretlint] successfully - (0.53s)[0m (expand for details)
 - Using [secretlint v9.0.0] https://megalinter.io/8.3.0/descriptors/repository_secretlint
 - MegaLinter key: [REPOSITORY_SECRETLINT]
 - Rules config: [.secretlintrc.json]
 - Command: [secretlint --secretlintrc /action/lib/.automation/.secretlintrc.json --secretlintignore .gitignore **/*]
 ::endgroup::
-::group::[32m✅ Linted [REPOSITORY] files with [syft] successfully - (1.02s)[0m (expand for details)
+::group::[32m✅ Linted [REPOSITORY] files with [syft] successfully - (1.08s)[0m (expand for details)
 - Using [syft v1.17.0] https://megalinter.io/8.3.0/descriptors/repository_syft
 - MegaLinter key: [REPOSITORY_SYFT]
 - Rules config: identified by [syft]
 - Command: [syft scan .]
 ::endgroup::
-::group::[32m✅ Linted [REPOSITORY] files with [trivy] successfully - (5.08s)[0m (expand for details)
+::group::[32m✅ Linted [REPOSITORY] files with [trivy] successfully - (5.15s)[0m (expand for details)
 - Using [trivy v0.57.1] https://megalinter.io/8.3.0/descriptors/repository_trivy
 - MegaLinter key: [REPOSITORY_TRIVY]
 - Rules config: identified by [trivy]
 - Command: [trivy fs --scanners vuln,misconfig --exit-code 1 .]
 ::endgroup::
-::group::[32m✅ Linted [REPOSITORY] files with [trivy-sbom] successfully - (0.06s)[0m (expand for details)
+::group::[32m✅ Linted [REPOSITORY] files with [trivy-sbom] successfully - (0.07s)[0m (expand for details)
 - Using [trivy-sbom v0.57.1] https://megalinter.io/8.3.0/descriptors/repository_trivy_sbom
 - MegaLinter key: [REPOSITORY_TRIVY_SBOM]
 - Rules config: identified by [trivy-sbom]
 - Command: [trivy fs --format cyclonedx .]
 ::endgroup::
-::group::[32m✅ Linted [REPOSITORY] files with [trufflehog] successfully - (1.43s)[0m (expand for details)
+::group::[32m✅ Linted [REPOSITORY] files with [trufflehog] successfully - (1.42s)[0m (expand for details)
 - Using [trufflehog v3.84.1] https://megalinter.io/8.3.0/descriptors/repository_trufflehog
 - MegaLinter key: [REPOSITORY_TRUFFLEHOG]
 - Rules config: identified by [trufflehog]
@@ -317,31 +317,31 @@ Processing linters on [4] parallel cores… (can be decreased with variable PARA
 | Descriptor    | Linter                   | Mode          | Files | Fixed | Errors | Elapsed time |
 +---------------+--------------------------+---------------+-------+-------+--------+--------------+
 | ✅ ACTION     | actionlint               | list_of_files |     2 |       |      0 |        0.02s |
-| ✅ COPYPASTE  | jscpd                    | project       |   n/a |       |      0 |        1.26s |
+| ✅ COPYPASTE  | jscpd                    | project       |   n/a |       |      0 |         1.2s |
 | ✅ JSON       | jsonlint                 | list_of_files |    12 |       |      0 |        0.17s |
-| ✅ JSON       | prettier                 | list_of_files |    12 |     8 |      0 |        0.48s |
-| ✅ JSON       | v8r                      | list_of_files |    12 |       |      0 |        6.56s |
-| ✅ MARKDOWN   | markdownlint             | list_of_files |     2 |     0 |      0 |         0.3s |
-| ✅ MARKDOWN   | markdown-link-check      | list_of_files |     2 |       |      0 |        2.11s |
-| ✅ MARKDOWN   | markdown-table-formatter | list_of_files |     2 |     0 |      0 |        0.27s |
-| ✅ REPOSITORY | checkov                  | project       |   n/a |       |      0 |       10.86s |
-| ✅ REPOSITORY | devskim                  | project       |   n/a |       |      0 |        0.79s |
+| ✅ JSON       | prettier                 | list_of_files |    12 |     8 |      0 |        0.38s |
+| ✅ JSON       | v8r                      | list_of_files |    12 |       |      0 |        6.62s |
+| ✅ MARKDOWN   | markdownlint             | list_of_files |     2 |     0 |      0 |        0.32s |
+| ✅ MARKDOWN   | markdown-link-check      | list_of_files |     2 |       |      0 |        1.96s |
+| ✅ MARKDOWN   | markdown-table-formatter | list_of_files |     2 |     0 |      0 |        0.28s |
+| ✅ REPOSITORY | checkov                  | project       |   n/a |       |      0 |        11.0s |
+| ✅ REPOSITORY | devskim                  | project       |   n/a |       |      0 |        0.78s |
 | ✅ REPOSITORY | dustilock                | project       |   n/a |       |      0 |         0.0s |
-| ✅ REPOSITORY | gitleaks                 | project       |   n/a |       |      0 |        0.04s |
+| ✅ REPOSITORY | gitleaks                 | project       |   n/a |       |      0 |        0.05s |
 | ✅ REPOSITORY | git_diff                 | project       |   n/a |       |      0 |        0.01s |
-| ✅ REPOSITORY | grype                    | project       |   n/a |       |      0 |        8.64s |
-| ✅ REPOSITORY | kics                     | project       |   n/a |       |      0 |        1.47s |
-| ✅ REPOSITORY | secretlint               | project       |   n/a |       |      0 |         0.5s |
-| ✅ REPOSITORY | syft                     | project       |   n/a |       |      0 |        1.02s |
-| ✅ REPOSITORY | trivy                    | project       |   n/a |       |      0 |        5.08s |
-| ✅ REPOSITORY | trivy-sbom               | project       |   n/a |       |      0 |        0.06s |
-| ✅ REPOSITORY | trufflehog               | project       |   n/a |       |      0 |        1.43s |
-| ✅ SPELL      | cspell                   | list_of_files |    30 |       |      0 |        2.48s |
-| ✅ SPELL      | lychee                   | list_of_files |    26 |       |      0 |        0.76s |
+| ✅ REPOSITORY | grype                    | project       |   n/a |       |      0 |        9.94s |
+| ✅ REPOSITORY | kics                     | project       |   n/a |       |      0 |        1.82s |
+| ✅ REPOSITORY | secretlint               | project       |   n/a |       |      0 |        0.53s |
+| ✅ REPOSITORY | syft                     | project       |   n/a |       |      0 |        1.08s |
+| ✅ REPOSITORY | trivy                    | project       |   n/a |       |      0 |        5.15s |
+| ✅ REPOSITORY | trivy-sbom               | project       |   n/a |       |      0 |        0.07s |
+| ✅ REPOSITORY | trufflehog               | project       |   n/a |       |      0 |        1.42s |
+| ✅ SPELL      | cspell                   | list_of_files |    30 |       |      0 |        2.35s |
+| ✅ SPELL      | lychee                   | list_of_files |    26 |       |      0 |        1.18s |
 | ✅ XML        | xmllint                  | list_of_files |     1 |     0 |      0 |        0.02s |
-| ✅ YAML       | prettier                 | list_of_files |    10 |     4 |      0 |        0.62s |
-| ✅ YAML       | v8r                      | list_of_files |    10 |       |      0 |        6.49s |
-| ✅ YAML       | yamllint                 | list_of_files |    10 |       |      0 |        0.33s |
+| ✅ YAML       | prettier                 | list_of_files |    10 |     4 |      0 |         0.5s |
+| ✅ YAML       | v8r                      | list_of_files |    10 |       |      0 |        6.76s |
+| ✅ YAML       | yamllint                 | list_of_files |    10 |       |      0 |        0.37s |
 +---------------+--------------------------+---------------+-------+-------+--------+--------------+
 
 [32m✅ Successfully linted all files without errors[0m
