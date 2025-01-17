@@ -1,6 +1,7 @@
 ---
 name: MegaLinter
 on:
+  push: null
   pull_request:
     branches:
       - main
