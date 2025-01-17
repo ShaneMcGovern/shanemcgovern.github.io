@@ -8,8 +8,8 @@
   
   env:
     APPLY_FIXES: all
-    APPLY_FIXES_EVENT: pull_request
-    APPLY_FIXES_MODE: commit
+    APPLY_FIXES_EVENT: all #pull_request
+    APPLY_FIXES_MODE: pull_request #commit
     REPOSITORY_TRUFFLEHOG_ARGUMENTS: "--exclude-paths=./.github/workflows/linters/trufflehog/exclude-paths.txt"
     REPOSITORY_GIT_DIFF_ARGUMENTS: "--ignore-space-at-eol"
     SPELL_LYCHEE_ARGUMENTS: '--exclude "marketplace\.visualstudio\.com"|"search\.maven\.org"'
