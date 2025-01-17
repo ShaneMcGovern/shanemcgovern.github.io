@@ -5,13 +5,30 @@
         "stefanzweifel",
         "CODEOWNERS",
         "MARKDOWNLINT",
-        "TRUFFLEHOG"
+        "TRUFFLEHOG",
+        "grype",
+        "logrus",
+        "cpes",
+        "venv",
+        "devskim",
+        "Bridgecrew",
+        "esbenp",
+        "hardis",
+        "unindexed",
+        "UNINDEXED"
     ],
     "flagWords": [
         "master"
     ],
     "ignorePaths": [
         ".gitignore",
-        "cspell.json"
+        "cspell.json",
+        "megalinter-reports/**",
+        ".github/workflows/linters/trufflehog-exclude-paths.txt",
+        "node_modules/**",
+        "build/**",
+        ".git/**",
+        "**/*.min.js",
+        "**/*.map"
     ]
 }
