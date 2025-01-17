@@ -35,3 +35,5 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+
+[![MegaLinter](https://github.com/ShaneMcGovern/shanemcgovern.github.io/actions/workflows/mega-linter.yml/badge.svg?branch=main)](https://github.com/ShaneMcGovern/shanemcgovern.github.io/actions/workflows/mega-linter.yml?query=branch%3Amain)
