@@ -136,14 +136,14 @@ typings/
 # clj-kondo cache
 .cache
 
-# default output report
-mega-linter.report
+# # default output report
+# mega-linter.report
 
-# Salesforce reports
-**/megalinter-reports/*
-!**/salesforce/report/*
-!**/salesforce/good/report/*
-!**/salesforce/bad/report/*
+# # Salesforce reports
+# **/megalinter-reports/*
+# !**/salesforce/report/*
+# !**/salesforce/good/report/*
+# !**/salesforce/bad/report/*
 
 # .NET Core build folders
 bin/
