@@ -1,8 +1,0 @@
-[exclude]
-regex = [
-    "https://marketplace.visualstudio.com/items\\?itemName=Bridgecrew.checkov",
-    "https://search.maven.org/solrsearch/select"
-]
-
-[timeouts]
-default = "10s"
