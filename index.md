@@ -1,11 +1,14 @@
 # Shane McGovern
 
+## Keywords
+Keyword 1, Keyword 2
+
 ## Skills
-__AI__
+__Skill Group 1__
 - Business value 1
 - Business value 2
 
-__Platform__
+__Skill Group 1__
 - Business value 1
 - Business value 2
 
@@ -19,24 +22,26 @@ __Job Title__, Company, City
 - Business value 2
 
 ## Projects
-### Project Title
-- Business value 1
-- Business value 2
-### Project Title
+__Project Title__
 - Business value 1
 - Business value 2
 
-## Education
+__Project Title__
+- Business value 1
+- Business value 2
 
 ## Certification
 
+## Education
+
+
+[![MegaLinter](https://github.com/ShaneMcGovern/shanemcgovern.github.io/actions/workflows/mega-linter.yml/badge.svg?branch=main)](https://github.com/ShaneMcGovern/shanemcgovern.github.io/actions/workflows/mega-linter.yml?query=branch%3Amain)
 
 
 
 
 
-
-# Shane McGovern
+# Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/ShaneMcGovern/shanemcgovern.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
 
@@ -73,5 +78,3 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
-
-[![MegaLinter](https://github.com/ShaneMcGovern/shanemcgovern.github.io/actions/workflows/mega-linter.yml/badge.svg?branch=main)](https://github.com/ShaneMcGovern/shanemcgovern.github.io/actions/workflows/mega-linter.yml?query=branch%3Amain)
