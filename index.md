@@ -1,11 +1,19 @@
 # Shane McGovern
 
 ## Skills
+__AI__
+- Business value 1
+- Business value 2
+
+__Platform__
+- Business value 1
+- Business value 2
 
 ## Experience
 __Job Title__, Company, City
 - Business value 1
 - Business value 2
+
 __Job Title__, Company, City
 - Business value 1
 - Business value 2
@@ -19,6 +27,8 @@ __Job Title__, Company, City
 - Business value 2
 
 ## Education
+
+## Certification
 
 
 
