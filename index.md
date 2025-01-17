@@ -3,8 +3,20 @@
 ## Skills
 
 ## Experience
+__Job Title__, Company, City
+- Business value 1
+- Business value 2
+__Job Title__, Company, City
+- Business value 1
+- Business value 2
 
 ## Projects
+### Project Title
+- Business value 1
+- Business value 2
+### Project Title
+- Business value 1
+- Business value 2
 
 ## Education
 
