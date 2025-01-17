@@ -15,7 +15,8 @@
         "esbenp",
         "hardis",
         "unindexed",
-        "UNINDEXED"
+        "UNINDEXED",
+        "secretlintrc"
     ],
     "flagWords": [
         "master"
