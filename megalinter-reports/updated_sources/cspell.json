@@ -1,7 +1,33 @@
 {
   "version": "0.2",
   "language": "en",
-  "words": ["stefanzweifel", "CODEOWNERS", "MARKDOWNLINT", "TRUFFLEHOG"],
+  "words": [
+    "stefanzweifel",
+    "CODEOWNERS",
+    "MARKDOWNLINT",
+    "TRUFFLEHOG",
+    "grype",
+    "logrus",
+    "cpes",
+    "venv",
+    "devskim",
+    "Bridgecrew",
+    "esbenp",
+    "hardis",
+    "unindexed",
+    "UNINDEXED",
+    "secretlintrc"
+  ],
   "flagWords": ["master"],
-  "ignorePaths": [".gitignore", "cspell.json"]
+  "ignorePaths": [
+    ".gitignore",
+    "cspell.json",
+    "megalinter-reports/**",
+    ".github/workflows/linters/trufflehog-exclude-paths.txt",
+    "node_modules/**",
+    "build/**",
+    ".git/**",
+    "**/*.min.js",
+    "**/*.map"
+  ]
 }
