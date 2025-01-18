@@ -52,22 +52,41 @@ jobs:
         uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e #v4.0.5
 
 
-  pandoc:
-    needs: deploy
+  # pandoc:
+  #   needs: deploy
+  #   runs-on: ubuntu-22.04
+  #   steps:
+  #     - name: Checkout repository
+  #       uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 #v4.2.2
+
+  #     - name: Install dependencies
+  #       run: sudo apt-get update && sudo apt-get install -y texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended
+
+  #     - name: Generate PDF from index.md
+  #       uses: docker://pandoc/core:3.5
+  #       with:
+  #         args: "index.md -o _site/resume.pdf"
+
+  #     - name: Upload PDF artifact
+  #       uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa #v3.0.1
+  #       with:
+  #         path: _site/resume.pdf   
+  convert_via_pandoc:
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout repository
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 #v4.2.2
 
-      # - name: Install dependencies
-      #   run: sudo apt-get update && sudo apt-get install -y texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended
+      - name: Install dependencies
+        run: sudo apt-get update && sudo apt-get install -y texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended
 
-      - name: Generate PDF from index.md
+      - name: Step 1
+        run: echo "foo" > input.txt  # create an example file
+
+      - name: Step 2
         uses: docker://pandoc/core:3.5
         with:
-          args: "index.md -o _site/resume.pdf"
-
-      - name: Upload PDF artifact
-        uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa #v3.0.1
-        with:
-          path: _site/resume.pdf      
+          args: >-  # allows you to break string into multiple lines
+            --standalone
+            --output=index.html
+            input.txt   
