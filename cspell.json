@@ -2,23 +2,27 @@
   "version": "0.2",
   "language": "en",
   "words": [
-    "stefanzweifel",
-    "CODEOWNERS",
-    "MARKDOWNLINT",
-    "TRUFFLEHOG",
-    "grype",
-    "logrus",
-    "cpes",
-    "venv",
-    "devskim",
     "Bridgecrew",
+    "CODEOWNERS",
+    "cpes",
+    "devskim",
     "esbenp",
+    "grype",
     "hardis",
+    "logrus",
+    "MARKDOWNLINT",
+    "pandoc",
+    "secretlintrc",
+    "stefanzweifel",
+    "texlive",
+    "TRUFFLEHOG",
     "unindexed",
     "UNINDEXED",
-    "secretlintrc"
+    "venv"
   ],
-  "flagWords": ["master"],
+  "flagWords": [
+    "master"
+  ],
   "ignorePaths": [
     ".gitignore",
     "cspell.json",
