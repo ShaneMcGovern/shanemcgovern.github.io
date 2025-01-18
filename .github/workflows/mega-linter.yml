@@ -13,6 +13,7 @@ env:
   REPOSITORY_TRUFFLEHOG_ARGUMENTS: "--exclude-paths=./.github/workflows/linters/trufflehog/exclude-paths.txt"
   REPOSITORY_GIT_DIFF_ARGUMENTS: "--ignore-space-at-eol"
   SPELL_LYCHEE_ARGUMENTS: '--exclude "marketplace\.visualstudio\.com"|"search\.maven\.org"'
+  REPOSITORY_KICS_ARGUMENTS: "--log-level WARN"
 
 concurrency:
   group: ${{ github.ref }}-${{ github.workflow }}
