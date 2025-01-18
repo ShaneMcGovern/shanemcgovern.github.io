@@ -63,7 +63,7 @@ jobs:
       #   run: sudo apt-get update && sudo apt-get install -y texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended
 
       - name: Generate PDF from index.md
-        uses: docker://pandoc/core:8712c843722e9d0a3dcb389e13e8d3b20d8d5dd9649d4aab3614deec3f8249c7
+        uses: docker://pandoc/core@sha256:8712c843722e9d0a3dcb389e13e8d3b20d8d5dd9649d4aab3614deec3f8249c7
         with:
           args: "index.md -o _site/resume.pdf"
 
