@@ -1,16 +1,13 @@
 # Shane McGovern
 
-__Engineering | Pipelines | Machine Learning__  
+__Engineering \| Pipelines \| Machine Learning__
 
 Professional engineer specializing data pipeline development, machine learning, and optimization. Proven expertise in solving complex industry challenges through data-driven insights, team leadership, and project execution within budget and timelines. Skilled in collaborating across disciplines, delivering tailored solutions, and presenting actionable findings to technical and non-technical audiences.
 
 ## Skills
-
-| Category   | Skills                         |
-|------------|--------------------------------|
-| Languages: | Python, Language 2, Language n |
-| Modeling:  | Data Vault 2.0, Modeling n     |
-
+- Infrastructure as Code ( IaC ): Terraform, CloudFormation, and Helm.
+- Containerization / Orchestration: Docker, Kubernetes
+- Observability: [New Relic](https://newrelic.com/), Prometheus, and [Sumo Logic](https://www.sumologic.com/).
 
 ## Experience
 
