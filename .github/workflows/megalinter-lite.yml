@@ -1,5 +1,5 @@
 ---
-name: lite push checks
+name: lite push check
 
 on:
   push:

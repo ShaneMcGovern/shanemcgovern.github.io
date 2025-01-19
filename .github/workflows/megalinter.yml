@@ -1,5 +1,5 @@
 ---
-name: full pull request checks
+name: full pull-request check
 
 on:
   pull_request:
