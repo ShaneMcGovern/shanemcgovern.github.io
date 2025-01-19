@@ -1,15 +1,22 @@
 ---
 name: lite push check
 
+# on:
+#   push:
+#     branches-ignore:
+#       - main
+#   pull_request:
+#     types:
+#       - closed
+#     branches-ignore:
+#       - main
+
 on:
   push:
     branches-ignore:
       - main
-  pull_request:
-    types:
-      - closed
-    branches-ignore:
-      - main
+  pull_request: null
+
 
 env:
   ENABLE_LINTERS: cspell, lychee, markdownlint, markdown-link-check, markdown-table-formatter
