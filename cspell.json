@@ -18,6 +18,7 @@
     "pandoc",
     "pdflatex",
     "secretlintrc",
+    "shanemcgovern",
     "stefanzweifel",
     "texlive",
     "TRUFFLEHOG",
@@ -26,9 +27,7 @@
     "venv",
     "Xero"
   ],
-  "flagWords": [
-    "master"
-  ],
+  "flagWords": ["master"],
   "ignorePaths": [
     ".gitignore",
     "cspell.json",
