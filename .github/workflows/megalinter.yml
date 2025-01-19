@@ -16,8 +16,8 @@ env:
   REPOSITORY_KICS_ARGUMENTS: "--fail-on MEDIUM"
 
 concurrency:
-  group: ${{ github.ref }}-${{ github.workflow }}
-  cancel-in-progress: true
+  group: megalinter-${{ github.ref }}
+  cancel-in-progress: true  
 
 permissions:
   contents: write
