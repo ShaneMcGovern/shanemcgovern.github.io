@@ -7,8 +7,12 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: megalinter-lite-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
-  megalinter:
+  megalinter-lite:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
