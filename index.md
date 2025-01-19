@@ -1,16 +1,11 @@
 # Shane McGovern
 
-__Engineering | Pipelines | Machine Learning__  
+__Engineering \| Pipelines \| Machine Learning__
 
 Professional engineer specializing data pipeline development, machine learning, and optimization. Proven expertise in solving complex industry challenges through data-driven insights, team leadership, and project execution within budget and timelines. Skilled in collaborating across disciplines, delivering tailored solutions, and presenting actionable findings to technical and non-technical audiences.
 
 ## Skills
-
-| Category   | Skills                         |
-|------------|--------------------------------|
-| Languages: | Python, Language 2, Language n |
-| Modeling:  | Data Vault 2.0, Modeling n     |
-
+- Observability:  [Dynatrace](https://www.dynatrace.com/), [Datadog](https://www.datadoghq.com/), [New Relic](https://newrelic.com/) to [Sumo Logic](https://www.sumologic.com/).
 
 ## Experience
 
