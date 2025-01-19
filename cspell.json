@@ -8,6 +8,7 @@
     "CODEOWNERS",
     "cpes",
     "devskim",
+    "Dynatrace",
     "esbenp",
     "grype",
     "hardis",
@@ -24,7 +25,9 @@
     "venv",
     "Xero"
   ],
-  "flagWords": ["master"],
+  "flagWords": [
+    "master"
+  ],
   "ignorePaths": [
     ".gitignore",
     "cspell.json",
