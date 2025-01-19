@@ -1,11 +1,16 @@
 ---
-name: megalinter-lite 
+name: on push
 
 on:
   push:
+    branches-ignore:
+      - main
+  pull_request:
+    types:
+      - closed
 
 env:
-  ENABLE_LINTERS: markdownlint
+  ENABLE_LINTERS: cspell, lychee, markdownlint, markdown-link-check, markdown-table-formatter
 
 permissions:
   contents: write
