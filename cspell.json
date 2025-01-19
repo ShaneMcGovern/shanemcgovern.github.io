@@ -16,6 +16,7 @@
     "logrus",
     "MARKDOWNLINT",
     "pandoc",
+    "pdflatex",
     "secretlintrc",
     "stefanzweifel",
     "texlive",
