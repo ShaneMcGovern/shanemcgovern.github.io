@@ -72,28 +72,24 @@ jobs:
   #         path: _site/resume.pdf
   convert_via_pandoc:
     runs-on: ubuntu-22.04
+    needs: deploy
     steps:
       - name: Checkout repository
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 #v4.2.2
       
       - name: Install dependencies
-        run: sudo apt-get install texlive-latex-base
-  
-        # texlive-latex-extra
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y texlive-latex-base texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended
 
-      - name: Step 1
-        run: echo "foo" > input.txt # create an example file
-
-      - name: Step 2
-        run: ls -al # create an example file
-
-      - name: Step 3
+      - name: Generate PDF from index.md
         uses: docker://pandoc/core:3.5
         with:
-          args: >- # allows you to break string into multiple lines
+          args: >-
             --standalone
+            --pdf-engine=pdflatex
             --output=resume.pdf
             index.md
 
-      - name: Step 4
-        run: ls -al # create an example file
+      - name: Verify output
+        run: ls -al # Check if the resume.pdf was created successfully
