@@ -14,8 +14,7 @@ on:
       - edited
       - synchronize
 
-
-env:  
+env:
   APPLY_FIXES: MARKDOWN_MARKDOWNLINT
   APPLY_FIXES_EVENT: none
   APPLY_FIXES_MODE: push
@@ -26,7 +25,7 @@ env:
 
 concurrency:
   group: megalinter-${{ github.ref }}
-  cancel-in-progress: true  
+  cancel-in-progress: true
 
 permissions:
   contents: write

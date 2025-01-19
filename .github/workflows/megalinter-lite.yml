@@ -1,5 +1,5 @@
 ---
-name: lite push check 
+name: lite push check
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
     types:
       - closed
     branches-ignore:
-      - main  
+      - main
 
 env:
   ENABLE_LINTERS: cspell, lychee, markdownlint, markdown-link-check, markdown-table-formatter
@@ -43,4 +43,4 @@ jobs:
           path: ~/.cache
           key: ${{ runner.os }}-megalinter-${{ github.sha }}
           restore-keys: |
-            ${{ runner.os }}-megalinter-          
+            ${{ runner.os }}-megalinter-

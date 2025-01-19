@@ -27,9 +27,7 @@
     "venv",
     "Xero"
   ],
-  "flagWords": [
-    "master"
-  ],
+  "flagWords": ["master"],
   "ignorePaths": [
     ".gitignore",
     "cspell.json",
