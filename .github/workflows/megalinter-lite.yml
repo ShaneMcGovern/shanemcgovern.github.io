@@ -2,12 +2,13 @@
 name: megalinter-lite
 
 on:
-  workflow_call:
-    inputs:
-      branch:
-        description: 'Branch or ref to validate.'
-        required: true
-        type: string
+  push:
+  # workflow_call:
+  #   inputs:
+  #     branch:
+  #       description: 'Branch or ref to validate.'
+  #       required: true
+  #       type: string
 
 permissions:
   contents: write
