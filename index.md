@@ -45,4 +45,4 @@ __Genetics and Biochemistry BSc__, Aberystwyth University, Wales, United Kingdom
 - Develop skills in statistical analysis, data interpretation, and molecular data techniques, laying a foundation for applications in machine learning and advanced computational biology.
 - Focused on selecting appropriate tests to support research, including linear regression, ANOVA, and selected multivariate analyses.
 
-[![MegaLinter](https://github.com/ShaneMcGovern/shanemcgovern.github.io/actions/workflows/mega-linter.yml/badge.svg?branch=main)](https://github.com/ShaneMcGovern/shanemcgovern.github.io/actions/workflows/mega-linter.yml?query=branch%3Amain)  
+[![MegaLinter](https://github.com/ShaneMcGovern/shanemcgovern.github.io/actions/workflows/mega-linter.yml/badge.svg?branch=main)](https://github.com/ShaneMcGovern/shanemcgovern.github.io/actions/workflows/mega-linter.yml?query=branch%3Amain)
