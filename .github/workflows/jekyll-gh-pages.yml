@@ -91,5 +91,8 @@ jobs:
         with:
           args: >-  # allows you to break string into multiple lines
             --standalone
-            --output=index.html
-            input.txt   
+            --output=resume.pdf
+            index.md   
+            
+      - name: Step 4
+        run: ls -al  # create an example file              
