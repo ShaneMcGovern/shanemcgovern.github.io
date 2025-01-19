@@ -4,6 +4,9 @@ name: megalinter-lite
 on:
   push:
 
+env:
+  ENABLE_LINTERS: markdownlint
+
 permissions:
   contents: write
 
