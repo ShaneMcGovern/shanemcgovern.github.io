@@ -1,5 +1,5 @@
 ---
-name: megalinter-lite
+name: megalinter-lite 
 
 on:
   push:
