@@ -28,11 +28,11 @@ __Research Assistant__, University of Oregon. (07/2011 - 07/2020)
 
 ## Projects
 
-**Project Title**  
+__Project Title__
 - Utilized [specific tools/technologies] to [achieve a goal].  
 - Delivered [quantifiable benefit, e.g., "reduced processing time by 20%"].  
 
-**Project Title**  
+__Project Title__
 - Developed [specific solution] to address [specific challenge].  
 - Led [key aspect] resulting in [business impact].
 
