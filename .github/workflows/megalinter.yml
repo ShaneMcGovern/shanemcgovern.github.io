@@ -1,18 +1,11 @@
 ---
 name: full pull-request check
 
-# on:
-#   push: null
-#   pull_request:
-#     branches:
-#       - main
-
 on:
+  push: null
   pull_request:
-    types:
-      - opened
-      - edited
-      - synchronize
+    branches:
+      - main
 
 env:
   APPLY_FIXES: MARKDOWN_MARKDOWNLINT

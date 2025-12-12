@@ -5,11 +5,6 @@ on:
   push:
     branches-ignore:
       - main
-  pull_request:
-    types:
-      - closed
-    branches-ignore:
-      - main
 
 env:
   ENABLE_LINTERS: cspell, lychee, markdownlint, markdown-link-check, markdown-table-formatter
